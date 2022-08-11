@@ -1,0 +1,30 @@
+
+### get foods index
+GET http://localhost:3000/foods.json
+
+### post foods create
+POST http://localhost:3000/foods.json
+Content-Type: application/json
+
+{
+"meal": "dinner",
+"style": "spaghetti_and _meatballs",
+"size": "large",
+"description": "spaghertti and meeatblls with garlic bread, salad"
+}
+
+
+### get foods show
+GET http://localhost:3000/foods/9.json
+
+### patch food update
+PATCH http://localhost:3000/foods/6.json
+Content-Type: application/json
+
+{
+"meal": "lunch",
+"style": "taco_salad",
+"size": "medium",
+"description": "medium spicy taco salsd with beef, jalapenos, tomatoes"
+}
+
