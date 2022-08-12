@@ -8,9 +8,9 @@ Content-Type: application/json
 
 {
 "meal": "dinner",
-"style": "spaghetti_and _meatballs",
+"style": "linguini_with_peanut_sauce",
 "size": "large",
-"description": "spaghertti and meeatblls with garlic bread, salad"
+"description": "pasta with linguini peanut sauce"
 }
 
 
@@ -18,13 +18,15 @@ Content-Type: application/json
 GET http://localhost:3000/foods/9.json
 
 ### patch food update
-PATCH http://localhost:3000/foods/6.json
+PATCH http://localhost:3000/foods/8.json
 Content-Type: application/json
 
 {
-"meal": "lunch",
-"style": "taco_salad",
+"meal": "breakfast",
+"style": "spinach_craoissant",
 "size": "medium",
-"description": "medium spicy taco salsd with beef, jalapenos, tomatoes"
+"description": "spinach croissant"
 }
 
+### delete foods destroy
+DELETE http://localhost:3000/foods/5.json
